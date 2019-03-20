@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
 
-<!-- If IE use the latest rendering engine -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Head linking stylesheets and other dependencies-->
+    <head>
+        <meta charset="UTF-8">
+        <!-- If IE use the latest rendering engine -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Set the page to the width of the device and set the zoon level -->
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        
+        <meta name="description" content=" Sample Website for Rutgers Student Affairs">
+        <meta name="author" content="Phurushotham Shekar">
+        <title>SA - Site</title>
+        <link rel="icon" href="assets/icons/SA-Logo.png">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" type="text/css" href="css\bootstrap\bootstrap.min.css">
 
-<!-- Set the page to the width of the device and set the zoon level -->
-<meta name="viewport" content="width = device-width, initial-scale = 1">
-<title>Bootstrap Tutorial</title>
-<link rel="stylesheet" type="text/css" href="css\bootstrap\bootstrap.min.css">
+        <!--Styles CSS-->
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
 
+    <body>
 
-</head>
+        <!--Persistent navbar on top of page-->
+        <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/icons/SA-Logo.png" style="height:30px; margin-top:-5px;"></a>
+                </div>
+            
 
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#tf-home" class="page-scroll">Home</a></li>
+                        <li><a href="#tf-main" class="page-scroll">Main</a></li>
+                        <li><a href="#" class="page-scroll" data-toggle="tooltip" data-placement="bottom" title="Doesn't do anything">Secret</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
+        <div id="tf-home" class="page-header">
+            <div class = "row">
+                <h1>Super Awesome Website</h1>
+            </div>
+        </div>
 
+    </div>
+
+    </body>
 
 </html>
