@@ -16,7 +16,12 @@
         <!--Bootstrap CSS-->
         <link rel="stylesheet" type="text/css" href="css\bootstrap\bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css\bootstrap\bootstrap-theme.min.css">
+
+        <!-- JS scripts to enable better scrolling and bootstrap animations-->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/SmoothScroll.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
         <!--Styles CSS-->
         <link href="css/styles.css" rel="stylesheet">
 
@@ -35,6 +40,7 @@
         <nav id="tf-menu" class="nav  navbar-default  navbar-fixed-top dark">
             <div class="container">
                 <div class="navbar-header">
+                    <!--Button for Mobile/small screen size-->
                     <button type="btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -55,7 +61,7 @@
             </div>
         </nav>
 
-        <!--Home Page
+        <!--Home Page/Hero Image
         =========================-->
         <div id="tf-home" class="text-center">
             <div class = "overlay">
@@ -72,19 +78,21 @@
         =================================-->
         <div id="tf-main">
             <div class="container" style="margin-top: 20px;">
-                <!--3 columns arranged in a row-->
 
                 <h2 class="text-center">Lets Compare!</h2>
 
+                <!--3 columns arranged in a row-->
                 <div class="row">
                     <!--3 columns when large, 2 when medium (tablet or smaller screen), but 1 column when small (mobile)-->
+                    <!--Each column has 2 paragraphs and a button leading to search engine they're describing-->
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <a class="link" href="https://bing.com/" target="_blank"><h3>Bing</h3></a>
                         <br>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus. Congue mauris rhoncus aenean vel. Nunc aliquet bibendum enim facilisis gravida neque. Ornare quam viverra orci sagittis eu volutpat odio facilisis mauris. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Magna fringilla urna porttitor rhoncus dolor purus non enim. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor. Tellus id interdum velit laoreet. Risus viverra adipiscing at in tellus integer feugiat scelerisque. Bibendum enim facilisis gravida neque. Nibh ipsum consequat nisl vel pretium. Egestas dui id ornare arcu odio ut sem nulla. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis.</p>
                         <p>Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Id donec ultrices tincidunt arcu non sodales neque. Lacus vel facilisis volutpat est velit egestas dui. Placerat vestibulum lectus mauris ultrices eros. Et odio pellentesque diam volutpat commodo sed egestas. Tincidunt lobortis feugiat vivamus at augue. Enim ut sem viverra aliquet eget. Ornare arcu odio ut sem nulla pharetra diam. Facilisis volutpat est velit egestas dui. Bibendum at varius vel pharetra vel turpis nunc eget.</p>
                         <br>
-                        <a href="https://bing.com/" target="_blank"><button class="btn btn-theme dark">Bing</button></a>
+                        <!--Link opens in new tab for convenience-->
+                        <a href="https://bing.com/" target="_blank"><button class="btn btn-theme dark fade-in two">Bing</button></a>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-sm-12 ">
@@ -93,7 +101,7 @@
                         <p>Massa sed elementum tempus egestas. Aliquet nibh praesent tristique magna sit amet. Purus semper eget duis at tellus at. Vestibulum sed arcu non odio. Magna etiam tempor orci eu lobortis. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque. Sit amet venenatis urna cursus eget. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Ut diam quam nulla porttitor massa id. Eu sem integer vitae justo eget magna fermentum. Massa massa ultricies mi quis hendrerit dolor magna eget. Enim lobortis scelerisque fermentum dui. Eleifend donec pretium vulputate sapien. Egestas diam in arcu cursus. Neque sodales ut etiam sit amet nisl. Risus nullam eget felis eget nunc lobortis mattis aliquam.</p>
                         <p>Est placerat in egestas erat imperdiet sed euismod nisi. Bibendum est ultricies integer quis auctor elit. Neque vitae tempus quam pellentesque nec nam aliquam. Tortor id aliquet lectus proin nibh. Velit dignissim sodales ut eu sem integer. Arcu risus quis varius quam quisque. Id eu nisl nunc mi. Diam vel quam elementum pulvinar etiam non. Urna neque viverra justo nec. Mauris ultrices eros in cursus turpis. Placerat duis ultricies lacus sed turpis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae. Sed elementum tempus egestas sed. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.</p>
                         <br>
-                        <a href="https://google.com/" target="_blank"><button class="btn btn-theme dark fade-in three">Google</button></a>
+                        <a href="https://google.com/" target="_blank"><button class="btn btn-theme dark fade-in two">Google</button></a>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -102,32 +110,34 @@
                         <p>Pretium viverra suspendisse potenti nullam. Non enim praesent elementum facilisis leo. Morbi non arcu risus quis. Nulla pellentesque dignissim enim sit amet venenatis urna cursus. Facilisi cras fermentum odio eu feugiat pretium nibh. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Nec nam aliquam sem et tortor. Fames ac turpis egestas integer eget. Elementum facilisis leo vel fringilla. Mauris pharetra et ultrices neque ornare aenean. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Arcu dui vivamus arcu felis bibendum ut tristique. Amet risus nullam eget felis eget nunc lobortis. Feugiat scelerisque varius morbi enim nunc.</p>
                         <p>Enim nunc faucibus a pellentesque sit amet porttitor. Adipiscing enim eu turpis egestas pretium aenean. Non sodales neque sodales ut etiam sit amet nisl purus. Quis varius quam quisque id diam vel quam elementum. Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Proin fermentum leo vel orci porta non. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. At varius vel pharetra vel turpis nunc eget lorem dolor. Hendrerit dolor magna eget est lorem ipsum. Facilisi morbi tempus iaculis urna id volutpat. Vel fringilla est ullamcorper eget nulla facilisi etiam. Tincidunt eget nullam non nisi est sit amet facilisis magna. Lectus magna fringilla urna porttitor rhoncus dolor purus non. In ante metus dictum at tempor. Ut tristique et egestas quis ipsum suspendisse ultrices gravida. Risus nec feugiat in fermentum. In fermentum posuere urna nec. Adipiscing vitae proin sagittis nisl. Euismod lacinia at quis risus sed vulputate odio ut enim.</p>
                         <br>
-                        <a href="https://duckduckgo.com/" target="_blank"><button class="btn dark btn-theme">DuckDuckGo</button></a>
+                        <a href="https://duckduckgo.com/" target="_blank"><button class="btn dark btn-theme fade-in two">DuckDuckGo</button></a>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
-
+    
+    <!--Dark Mode enabled Footer with links to search engines from above-->
     <nav id="footer" class="dark">
         <div class="container">
+            <!--Left side, I made this site-->
             <div class="pull-left fnav">
                 <p style="font-weight:500;">This Site is made by Phurushotham Shekar.</p>  
             </div>
+            <!--Right side, Icons to link to external search engines-->
             <div class="pull-right fnav">
+
+                <!-- Used Font-awesome icons. Could not find bing and duckduckgo logos, so used microsoft and pied piper logos respectively. -->
                 <ul class="footer-sites">
-                    <li ><a href="https://bing.com" target="_blank"><i class="fab fa-microsoft"></i></a></li>
-                    <li><a href="https://google.com" target="_blank"><i class="fab fa-google"></i></a></li>
-                    <li><a href="https://duckduckgo.com" target="_blank"><i class="fab fa-pied-piper"></i></a></li>
+                    <li ><a href="https://bing.com" target="_blank"><i class="fab fa-microsoft fade-in three"></i></a></li>
+                    <li><a href="https://google.com" target="_blank"><i class="fab fa-google fade-in three"></i></a></li>
+                    <li><a href="https://duckduckgo.com" target="_blank"><i class="fab fa-pied-piper fade-in three"></i></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/SmoothScroll.js"></script>
 
     
     </body>

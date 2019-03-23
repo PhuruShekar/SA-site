@@ -1,5 +1,7 @@
+/*font import*/
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i');
 
+/*General color scheme for site*/
 body, html {
     font-family: 'Ubuntu', sans-serif;
     text-rendering: optimizeLegibility !important;
@@ -8,6 +10,7 @@ body, html {
     transition: all 0.5s;
 }
 
+/*In dark mode, swap colors*/
 body.dark {
     background-color:#161418;
     color: #f1e8e7;
@@ -15,7 +18,7 @@ body.dark {
 }
 
 
-/* Navigation */
+/* Navigation for nav-bar styles */
 #tf-menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
     color: #947D6E;
@@ -43,15 +46,15 @@ body.dark {
     transition: all 0.5s;
 }
 
+/*Dark Mode for home section*/
 body.dark #tf-home{
     background: url(../assets/imgs/hero-stock.jpg);
     background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
     background-repeat: no-repeat;
-    
 }
-
+/*Overlay effect for hero image*/
 #tf-home .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -61,6 +64,8 @@ body.dark #tf-home{
 	height: 100vh;
 	background-attachment: fixed;
 }
+
+/*Hero Text Styles + Dark mode*/
 #tf-home p.lead{
     color: #f1e8e7;
     transition: all 0.5s;
@@ -82,6 +87,7 @@ body.dark #tf-home p.lead{
     padding: 40px 0; /* Padding on top of section */
 }
 
+/*link/href styling + dark mode*/
 a.link {
     color: #947D6E;
     text-decoration: underline;
@@ -176,21 +182,21 @@ body.dark #footer i.fab:hover{
 }
 
 .fade-in.one {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .fade-in.two {
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  animation-delay: 1.2s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .fade-in.three {
-  -webkit-animation-delay: 1.7s;
-  -moz-animation-delay: 1.7s;
-  animation-delay: 1.7s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 .fade-in.four {
